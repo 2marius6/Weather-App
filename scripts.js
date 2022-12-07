@@ -39,10 +39,10 @@ window.addEventListener('load', () => {
           iconImg.src = iconUrl;
           loc.textContent = `${place}`;
           desc.textContent = `${description}`;
-          tempC.textContent = `${temp.toFixed(2)} °C`;
-          tempF.textContent = `${fahrenheit.toFixed(2)} °F`;
-          sunriseDOM.textContent = `${sunriseGMT.toLocaleDateString()}, ${sunriseGMT.toLocaleTimeString()}`;
-          sunsetDOM.textContent = `${sunsetGMT.toLocaleDateString()}, ${sunsetGMT.toLocaleTimeString()}`;
+          tempC.textContent = `${temp.toFixed(1)} °C`;
+          tempF.textContent = `${fahrenheit.toFixed(1)} °F`;
+          sunriseDOM.textContent = `${sunriseGMT.toLocaleTimeString('ro-RO', {hour: '2-digit', minute:'2-digit'})}`;
+          sunsetDOM.textContent = `${sunsetGMT.toLocaleTimeString('ro-RO', {hour: '2-digit', minute:'2-digit'})}`;
         });
       });
     }});
