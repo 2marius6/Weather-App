@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -13,27 +14,77 @@
 
 <body>
     <div class="container">
-        <img src="" alt="" srcset="" id="weather-icon">
-        
-        <div id="location" class="location">Unable to Fetch Weather</div>
-
-        <div class="desc">No Information Available.</div>
-
-        <div class="weather">
-            <div class="c">Error</div>
-            <div class="circle"></div>
-            <div class="f">Error</div>
-        </div>
-
-        <div class="info">
-            <h4>Sunrise: <span class="sunrise">No Information Available</span></h4>
-            <h4>Sunset: <span class="sunset">No Information Available</span></h4>
+        <div class="live-clock">
             <h4><div id = "clock" class="clock"></div></h4>
         </div>
+        <div class="temp">
+            <div class="c">-°C</div>
+            <div class="f">-°F</div>
+            <div class="temp-feel">
+                <p>Feels like:&nbsp</p>
+                <div class="rfc">-°C</div>
+                /
+                <div class="rff">-°F</div>
+            </div>
+            &nbsp;
+            <div class="min-max">
+                <h4><i class="fa-solid fa-temperature-arrow-up"></i> <span class="max">-</span></h4>
+                <h4><i class="fa-solid fa-temperature-arrow-down"></i> <span class="min">-</span></h4>
+            </div>
+            &nbsp;
+            <div class="wind">
+                <h4><i class="fa-solid fa-wind"></i> <span class="windS">-</span></h4>
+                <h4><i class="fa-solid fa-arrow-up"></i> <span class="windD">-</span></h4>
+            </div>
+            &nbsp;
+            <div class="misc-data">
+                <h4><i class="fa-solid fa-water"></i> <span class="humidity">-</span></h4>
+                <h4>Atmospheric pressure: <span class="atm">-</span></h4>
+            </div>
+        </div>
+        <div class="weather">
+            <div class="current-state">
+                <div id="location" class="location">-</div>
+                <img src="" alt="" srcset="" id="weather-icon">
+                <div class="desc">-</div>
+            </div> 
+        </div>
+        <div class="forecast">
+            <div class="forecast1">
+                <h4><span class="time1">-</span></h4>
+                <h4><span class="temp1">-</span></h4>
+            </div>
+            &nbsp;
+            <div class="forecast2">
+                <h4><span class="time2">-</span></h4>
+                <h4><span class="temp2">-</span></h4>
+            </div>
+            &nbsp;
+            <div class="forecast3">
+                <h4><span class="time3">-</span></h4>
+                <h4><span class="temp3">-</span></h4>
+            </div>
+            &nbsp;
+            <div class="forecast4">
+                <h4><span class="time4">-</span></h4>
+                <h4><span class="temp4">-</span></h4>
+            </div>
+            &nbsp;
+            <div class="forecast5">
+                <h4><span class="time5">-</span></h4>
+                <h4><span class="temp5">-</span></h4>
+            </div>
+            &nbsp;
+            <div class="forecast6">
+                <h4><span class="time6">-</span></h4>
+                <h4><span class="temp6">-</span></h4>
+            </div>
+        </div>
+        
     </div>
-
-    <script src="data-now-script.js"></script>
-    <script src = "clock-script.js"> </script>
+    <script src="js/data-now-script.js"></script>
+    <script src="js/data-forecast-script.js"></script>
+    <script src = "js/clock-script.js"> </script>
 </body>
 
 </html>

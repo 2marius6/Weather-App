@@ -8,22 +8,50 @@ body {
   font-family: 'Oswald', sans-serif;
 }
 
-.container {
+.container {  
   height: 100vh;
   width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background: rgb(0, 0, 50);
   background-position: bottom;
 }
 
-.weather {
+.weather{
+  background: rgba(255, 255, 255, 0.20);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  min-width: 5%;
+  float: left;
+  position: absolute;
+  padding: 2%;
+  bottom: 2%;
+  left: 2%;
+}
+
+.temp {
+  background: rgba(255, 255, 255, 0.20);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  min-width: 5%;
+  float:left;
+  font-size: 2rem;
+  align-items: left;
+  text-align: left;
+  padding: 2%;
+  position: absolute;
+  top: 2%;
+  left: 2%;
+}
+
+.temp-feel {
   display: flex; 
-  align-items: center;
-  margin: 15px 0;
+  margin: 5px;
   font-size: 1.5rem;
+  color: rgb(255, 255, 255);
 }
 
 #location {
@@ -42,14 +70,6 @@ body {
   color: white;
 }
 
-.circle {
-  background-color: rgb(255, 255, 255);
-  border-radius: 50px;
-  height: 15px;
-  width: 15px;
-  margin: 0 15px;
-}
-
 .c{
   color: white;
 }
@@ -58,10 +78,123 @@ body {
   color: white;
 }
 
-.info{
+.wind{
   color:white;
+  text-align: left;
+  font-size: 1rem;
 }
 
-.clock{
-  text-align: center;
+.misc-data{
+  color:white;
+  text-align: left;
+  font-size: 1rem;
+}
+
+.live-clock{
+  color:white;
+  text-align: right;
+  font-size: 2rem;
+  float: right;
+  position: relative;
+  top: 2%;
+  right: 2%
+}
+
+.current-state{
+  position: relative;
+  float: left;
+  width: 20%;
+}
+
+.min-max{
+  text-align: left;
+  min-width: 20%;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+}
+
+.forecast{
+  position:absolute;
+  bottom:2%;
+  right:2%;
+  min-width: 10%;
+  min-height: 15%;
+}
+
+.forecast1{
+  background: rgba(255, 255, 255, 0.20);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  min-width: 5%;
+  min-height: 10%;
+  color: white;
+  padding: 2%;
+}
+
+.forecast2{
+  background: rgba(255, 255, 255, 0.20);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  min-width: 5%;
+  min-height: 10%;
+  color: white;
+  padding: 2%;
+}
+
+.forecast3{
+  background: rgba(255, 255, 255, 0.20);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  min-width: 5%;
+  min-height: 10%;
+  color: white;
+  padding: 2%;
+}
+
+.forecast4{
+  background: rgba(255, 255, 255, 0.20);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  min-width: 5%;
+  min-height: 10%;
+  color: white;
+  padding: 2%;
+}
+
+.forecast5{
+  background: rgba(255, 255, 255, 0.20);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  min-width: 5%;
+  min-height: 10%;
+  color: white;
+  padding: 2%;
+}
+
+.forecast6{
+  background: rgba(255, 255, 255, 0.20);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4.4px);
+  -webkit-backdrop-filter: blur(4.4px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  min-width: 5%;
+  min-height: 10%;
+  color: white;
+  padding: 2%;
 }

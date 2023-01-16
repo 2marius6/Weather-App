@@ -1,15 +1,17 @@
-# What has been done by now:
-- implemented basic functionality and interaction with the API (sunrise/sunset hour, , live clock, temperature (both in C and F))
-- implemented variable icons depending on the weather
-- implemented location identification
+# Weather map using Open Weather Map API.
 
-# What is left to do:
-needed:
-- showing weather for next 5 days
-- showing real feel temperature, atmospheric pressure, location altitude, time zone, humidity
-- showing wind data (speed, direction)
-- daily min/max temperature
+# Description
+This project was done as a project for the "Web Technologies" subject. 
+It's an implementation of the Open Weather Map's free API, showcasing a few of it's features.
 
-# Optional:
-- variable wallpaper and font color depending on location, time and weather (static one if not possible)
-- live analogic clock instead of digital
+# Features
+- Real time clock (by using the system's time)
+- Data identification by current location
+- Description (and corresponding icon) of the current weather
+- Current temperature (in celsius and fahrenheit)
+- Real feel temperature (in celsius and fahrenheit)
+- Current min/max temperature (in celsius)
+- Current Wind speed (in km/h) and direction
+- Current humidity and atmospheric pressure (in mmHg)
+- Forecast for the next 6 hours (corresponding hour and temperature)
+- Variable background depending on the time (sunrise, day, sunset and night)
