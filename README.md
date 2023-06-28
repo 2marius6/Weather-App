@@ -1,4 +1,4 @@
-# Weather map using Open Weather Map API.
+# Weather app using Open Weather Map API.
 
 # Description
 This project was done as a project for the "Web Technologies" subject. 
